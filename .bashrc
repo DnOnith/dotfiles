@@ -142,12 +142,11 @@ export NVM_DIR="$HOME/.nvm"
 # UNESCAPED="${WALLPAPER_PATH}$(ls ~/wallpapers | sort -R | tail -$N | shuf -n 1)"
 # REPLACEMENT_VALUE=$(echo $UNESCAPED | sed 's;/;\\/;g')
 # sed -i "s/\($TARGET_KEY *= *\).*/\1$REPLACEMENT_VALUE/" $CONFIG_FILE
-export PATH=$PATH:/home/oscar/.spicetify
-export PATH=$PATH:/home/oscar/.local/bin/
+#export PATH=$PATH:/home/oscar/.local/bin/
 
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init bash)"
 
-#set Editor for nnn
 export EDITOR=nvim
 export READER=zathura
+export VIEWER=zathura
