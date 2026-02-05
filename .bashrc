@@ -123,7 +123,7 @@ alias customscreenkey="screenkey -s large --scr 2 -p bottom --geometry 1210x300+
 alias notes="cd ~/obsidian-notes/ && nvim"
 alias encode=". /home/leo/.config/scripts/encode.sh"
 alias settablet="xsetwacom --set \"15\" MapToOutput HEAD-1"
-alias nnn="nnn -eH"
+alias nnn="nnn -eHC"
 alias wiki=" firefox 'wiki.archlinux.org/title/Main_page'"
 alias environment="source venv/bin/activate"
 alias dwarf="cd ~/stuff/df && ./dwarfort"
@@ -150,3 +150,9 @@ eval "$(starship init bash)"
 export EDITOR=nvim
 export READER=zathura
 export VIEWER=zathura
+export VISUAL=nvim
+
+export HYPRSHOT_DIR=~/screens/
+
+# nnn options
+NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
