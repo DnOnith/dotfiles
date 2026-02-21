@@ -124,6 +124,7 @@ alias environment="source venv/bin/activate"
 alias c="clear"
 alias sacman="sudo pacman"
 alias hconf="nvim ~/.config/hypr/"
+alias opro="cd ~/gypt/gypt25/ && environment"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -150,3 +151,6 @@ export HYPRSHOT_DIR=~/screens/
 
 # nnn options
 NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+
+export PATH=$PATH:/home/leo/.cargo/bin/
+. "$HOME/.cargo/env"
