@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<leader>r", vim.diagnostic.goto_next, opts, { desc = "opens next diagnostic" })
 vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, opts, { desc = "Check local code actions" })
+vim.keymap.set("v", "v", "$")
