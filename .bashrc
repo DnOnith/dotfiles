@@ -125,7 +125,8 @@ alias c="clear"
 alias sacman="sudo pacman"
 alias hconf="nvim ~/.config/hypr/"
 alias opro="cd ~/gypt/gypt25/ && environment"
-
+alias hdmi='hyprctl keyword monitor HDMI-A-2, preferred, auto, 1'
+alias hdmi='hyprctl keyword monitor HDMI-A-2, disable'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
