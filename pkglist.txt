@@ -11,12 +11,14 @@ btop
 clang
 cmake
 cmatrix
+cpio
 dkms
 dmenu
 dunst
 dwarffortress
 efibootmgr
 fastfetch
+fd
 feh
 firefox
 flameshot

@@ -127,6 +127,7 @@ alias hconf="nvim ~/.config/hypr/"
 alias opro="cd ~/gypt/gypt25/ && environment"
 alias hdmi='hyprctl keyword monitor HDMI-A-2, preferred, auto, 1'
 alias hdmi='hyprctl keyword monitor HDMI-A-2, disable'
+alias fd='fd -I' #fd doesn't really work otherwise because most of my home directory is ignored in .gitignore for the dot repo
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
