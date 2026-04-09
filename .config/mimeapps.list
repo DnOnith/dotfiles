@@ -11,6 +11,8 @@ application/x-extension-xhtml=zen.desktop
 application/x-extension-xht=zen.desktop
 application/pdf=zathura.desktop
 image/pdf=zathura.desktop
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/discord-424004941485572097=discord-424004941485572097.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;

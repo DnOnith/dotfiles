@@ -1,10 +1,4 @@
 ani-cli
 batify
-cbonsai
 localsend-bin
-networkmanager-dmenu-git
-nmrs-debug
-noctalia-shell
-paru
-paru-debug
-zen-browser-bin
+vial-appimage
