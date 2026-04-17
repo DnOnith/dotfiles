@@ -2,9 +2,9 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # overwrite greeting
 # potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
+function fish_greeting
+    fastfetch
+end
 
 alias py='python3'
 alias encode=". /home/leo/.config/scripts/encode.sh"
@@ -19,6 +19,7 @@ alias hdmi='hyprctl keyword monitor HDMI-A-2, preferred, auto, 1'
 alias hdmi='hyprctl keyword monitor HDMI-A-2, disable'
 alias fd='fd -I' #fd doesn't really work otherwise because most of my home directory is ignored in .gitignore for the dot repo
 export NVM_DIR="$HOME/.nvm"
+alias lg='lazygit'
 
 function mkcd
     command mkdir $argv
