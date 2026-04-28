@@ -2,3 +2,4 @@
 --
 require(".config.hypr.monitors")
 require(".config.hypr.feelings")
+require(".config.hypr.input")
