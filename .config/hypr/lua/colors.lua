@@ -1,0 +1,31 @@
+local primary = "rgba(e6b450)"
+local surface = "rgba(0b0e14)"
+local secondary = "rgba(aad94c)"
+local error = "rgba(d95757)"
+local tertiary = "rgba(39bae6)"
+local surface_lowest = "rgba(0e1218)"
+
+hl.config({
+	general = {
+		col = {
+			active_border = primary,
+			inactive_border = surface,
+		},
+	},
+	group = {
+		col = {
+			border_active = secondary,
+			border_inactive = surface,
+			border_locked_active = error,
+			border_locked_inactive = surface,
+		},
+		groupbar = {
+			col = {
+				active = primary,
+				inactive = surface,
+				locked_active = error,
+				locked_inactive = surface,
+			},
+		},
+	},
+})

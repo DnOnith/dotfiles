@@ -41,10 +41,10 @@ hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
 -- Move windows with mainMod + shift + hjkl
-hl.bind(mainMod .. "SHIFT + H", hl.dsp.windows.move({ direction = "left" }))
-hl.bind(mainMod .. "SHIFT + L", hl.dsp.windows.move({ direction = "right" }))
-hl.bind(mainMod .. "SHIFT + K", hl.dsp.windows.move({ direction = "up" }))
-hl.bind(mainMod .. "SHIFT + J", hl.dsp.windows.move({ direction = "down" }))
+hl.bind(mainMod .. "SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. "SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. "SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. "SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 --scrolling binds
 hl.bind(mainMod .. "SHIFT + period", hl.dsp.layout("swapcol r"))
@@ -65,7 +65,7 @@ end
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
--- Move/resize windows with mainMod + LMB/RMB and dragging
+-- Move/resize window with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
