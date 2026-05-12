@@ -469,11 +469,11 @@
     },
     "location": {
         "analogClockInCalendar": true,
-        "autoLocate": true,
+        "autoLocate": false,
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Holzminden",
+        "name": "berlin",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -593,7 +593,7 @@
             },
             {
                 "action": "logout",
-                "command": "hyprctl dispatch exit",
+                "command": "hyprctl dispatch 'hl.dsp.exit()'",
                 "countdownEnabled": true,
                 "enabled": true,
                 "keybind": "5"
@@ -649,10 +649,6 @@
     },
     "templates": {
         "activeTemplates": [
-            {
-                "enabled": true,
-                "id": "hyprland"
-            }
         ],
         "enableUserTheming": false
     },
