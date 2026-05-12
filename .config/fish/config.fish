@@ -20,6 +20,7 @@ alias hdmi='hyprctl keyword monitor HDMI-A-2, disable'
 alias fd='fd -I' #fd doesn't really work otherwise because most of my home directory is ignored in .gitignore for the dot repo
 export NVM_DIR="$HOME/.nvm"
 alias lg='lazygit'
+alias arcli='arduino-cli'
 
 function mkcd
     command mkdir $argv
