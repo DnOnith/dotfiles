@@ -35,8 +35,26 @@ hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("kitty yazi"))
 
 -- Move focus with mainMod + hjkl
-hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+--hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+
+hl.bind(mainMod .. " + H", function()
+	if hl.get_active_workspace().tiled_layout == "scrolling" then
+		hl.dispatch(hl.dsp.focus({ direction = "left" }))
+	else
+		hl.dispatch(hl.dsp.layout("cycleprev"))
+	end
+end)
+
+--hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+
+hl.bind(mainMod .. " + L", function()
+	if hl.get_active_workspace().tiled_layout == "scrolling" then
+		hl.dispatch(hl.dsp.focus({ direction = "right" }))
+	else
+		hl.dispatch(hl.dsp.layout("cyclenext"))
+	end
+end)
+
 hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
@@ -102,7 +120,15 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 --noctalia shell bindings
 local ipc = "qs -c noctalia-shell ipc call"
 
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. "launcher toggle"))
-hl.bind(mainMod, hl.dsp.exec_cmd(ipc .. "controlCenter toggle"), { release = true })
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
+--hl.bind(mainMod, hl.dsp.exec_cmd(ipc .. " controlCenter toggle"), { release = true })
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " powerProfile cycle"))
+
+hl.bind(mainMod .. " + M", function()
+	if hl.get_active_workspace().tiled_layout == "scrolling" then
+		hl.config({ general = { layout = "monocle" } })
+	else
+		hl.config({ general = { layout = "scrolling" } })
+	end
+end)
