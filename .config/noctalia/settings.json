@@ -14,7 +14,7 @@
         "enableSessionSearch": false,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -64,6 +64,8 @@
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
+            "HDMI-A-1",
+            "eDP-1"
         ],
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
@@ -74,6 +76,11 @@
         "rightClickCommand": "",
         "rightClickFollowMouse": true,
         "screenOverrides": [
+            {
+                "density": "compact",
+                "enabled": true,
+                "name": "HDMI-A-1"
+            }
         ],
         "showCapsule": false,
         "showOnWorkspaceSwitch": true,
@@ -88,19 +95,19 @@
                     "emptyColor": "none",
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
-                    "followFocusedScreen": true,
+                    "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
                     "hideUnoccupied": false,
                     "iconScale": 0.8,
                     "id": "Workspace",
                     "labelMode": "index",
-                    "occupiedColor": "none",
+                    "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": true,
                     "showApplicationsHover": true,
                     "showBadge": true,
-                    "showLabelsOnlyWhenOccupied": true,
+                    "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
                 }
             ],
@@ -175,10 +182,6 @@
                     "hideWhenIdle": true,
                     "id": "AudioVisualizer",
                     "width": 200
-                },
-                {
-                    "iconColor": "none",
-                    "id": "PowerProfile"
                 },
                 {
                     "blacklist": [

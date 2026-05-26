@@ -79,6 +79,15 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
+--switch between monocle and scrolling
+hl.bind(mainMod .. " + M", function()
+	if hl.get_active_workspace().tiled_layout == "scrolling" then
+		hl.config({ general = { layout = "monocle" } })
+	else
+		hl.config({ general = { layout = "scrolling" } })
+	end
+end)
+
 --special work space
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
@@ -125,10 +134,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " powerProfile cycle"))
 
-hl.bind(mainMod .. " + M", function()
-	if hl.get_active_workspace().tiled_layout == "scrolling" then
-		hl.config({ general = { layout = "monocle" } })
-	else
-		hl.config({ general = { layout = "scrolling" } })
-	end
-end)
+--hyprshot
+hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -zm window"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -zm output"))
+hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -zm region"))

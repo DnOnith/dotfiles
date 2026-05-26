@@ -4,6 +4,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 amd-ucode
+arduino-cli
 asciidoctor
 asusctl
 awesome-terminal-fonts
@@ -63,6 +64,7 @@ duf
 dunst
 dwarffortress
 e2fsprogs
+eartag
 efibootmgr
 efitools
 egl-wayland
@@ -114,15 +116,17 @@ i3-wm
 i3blocks
 i3lock
 i3status
+id3v2
 inetutils
 inkscape
 intel-media-driver
 intel-ucode
-iptables-nft
+iptables
 iwd
 jfsutils
 julia
 jupyterlab
+kicad
 kitty
 lazygit
 less
@@ -164,6 +168,8 @@ micro
 mkinitcpio
 modemmanager
 mtools
+musescore
+mutt
 nano
 nano-syntax-highlighting
 neovim
@@ -192,6 +198,7 @@ pavucontrol
 pdfpc
 perl
 picom
+piper
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
@@ -227,7 +234,6 @@ shelly
 smartmontools
 snapper
 sof-firmware
-splix
 starship
 steam
 sudo
@@ -278,6 +284,7 @@ wget
 which
 wireless_tools
 wireplumber
+wireshark-qt
 wl-clipboard
 wlsunset
 wmenu
@@ -296,6 +303,7 @@ xorg-xwayland
 xss-lock
 xterm
 yazi
+yt-dlp
 zathura
 zathura-pdf-mupdf
 zen-browser-bin

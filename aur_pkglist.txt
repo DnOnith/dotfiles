@@ -1,4 +1,6 @@
-ani-cli
+ani-cli-git
 batify
 localsend-bin
+rpcs3-bin
+splix
 vial-appimage
