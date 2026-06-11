@@ -130,7 +130,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 local ipc = "qs -c noctalia-shell ipc call"
 
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
---hl.bind(mainMod, hl.dsp.exec_cmd(ipc .. " controlCenter toggle"), { release = true })
+hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"), { release = true })
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " powerProfile cycle"))
 
