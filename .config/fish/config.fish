@@ -13,12 +13,12 @@ alias c="clear"
 alias sacman="sudo pacman"
 alias hconf="nvim ~/.config/hypr/"
 alias hdmi='hyprctl keyword monitor HDMI-A-2, preferred, auto, 1'
-alias hdmi='hyprctl keyword monitor HDMI-A-2, disable'
+alias hdmioff='hyprctl keyword monitor HDMI-A-2, disable'
 alias fd='fd -I' #fd doesn't really work otherwise because most of my home directory is ignored in .gitignore for the dot repo
 export NVM_DIR="$HOME/.nvm"
 alias lg='lazygit'
 alias arcli='arduino-cli'
-alias trs ='trash-put'
+alias trs='trash-put'
 
 function mkcd
     command mkdir $argv

@@ -126,15 +126,15 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
---noctalia shell bindings
-local ipc = "qs -c noctalia-shell ipc call"
-
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
-hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"), { release = true })
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " powerProfile cycle"))
-
 --hyprshot
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -zm window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -zm output"))
 hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -zm region"))
+
+--noctalia shell
+local noctalia = "noctalia msg"
+
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher"))
+hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd(noctalia .. " panel-toggle control-center"), { release = true })
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(noctalia .. " panel-toggle session"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctalia .. "power-cycle"))
