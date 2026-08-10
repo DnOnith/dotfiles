@@ -26,7 +26,7 @@ hl.gesture({
 local mainMod = "SUPER"
 --window manipulation
 hl.bind(mainMod .. " + C", hl.dsp.window.kill())
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 
 --execute stuff
@@ -137,4 +137,5 @@ local noctalia = "noctalia msg"
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher"))
 hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd(noctalia .. " panel-toggle control-center"), { release = true })
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(noctalia .. " panel-toggle session"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctalia .. "power-cycle"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctalia .. " power-cycle"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle clipboard"))
