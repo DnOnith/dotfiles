@@ -1,91 +1,115 @@
 [bar.default]
-background_opacity = 0.89999997988343239
-center = [ "workspaces" ]
+background_opacity = 0.9
+center = ["workspaces"]
 concave_edge_corners = false
-end = [ "media", "tray", "notifications", "clipboard", "bluetooth", "volume", "brightness", "battery", "control-center" ]
+end = [
+  "media",
+  "tray",
+  "notifications",
+  "clipboard",
+  "bluetooth",
+  "volume",
+  "brightness",
+  "battery",
+  "control-center",
+]
 font_family = "JetBrains Mono"
 margin_ends = 0
 radius_top_left = 0
 radius_top_right = 0
-start = [ "launcher", "clock", "date", "cpu", "temp", "ram", "network_rx", "network_tx", "network" ]
+start = [
+  "launcher",
+  "clock",
+  "date",
+  "cpu",
+  "temp",
+  "ram",
+  "network_rx",
+  "network_tx",
+  "network",
+]
 
 [idle]
-behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+behavior_order = ["lock", "screen-off", "lock-and-suspend"]
 
-    [idle.behavior.lock]
-    action = "lock"
-    enabled = true
-    timeout = 180.0
+[idle.behavior.lock]
+action = "lock"
+enabled = true
+timeout = 180.0
 
-    [idle.behavior.lock-and-suspend]
-    action = "lock_and_suspend"
-    enabled = true
-    timeout = 900.0
+[idle.behavior.lock-and-suspend]
+action = "lock_and_suspend"
+enabled = true
+timeout = 900.0
 
-    [idle.behavior.screen-off]
-    action = "screen_off"
-    enabled = true
-    timeout = 600.0
+[idle.behavior.screen-off]
+action = "screen_off"
+enabled = true
+timeout = 600.0
+
+[lockscreen]
+blur_intensity = 0
+tint_intensity = 0
 
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
+widget_order = ["lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1"]
 
-    [lockscreen_widgets.grid]
-    cell_size = 16
-    major_interval = 4
-    visible = true
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
 
-    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
-    box_height = 196.0
-    box_width = 810.0
-    cx = 960.0
-    cy = 898.0
-    output = "HDMI-A-1"
-    rotation = 0.0
-    type = "login_box"
+[lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+box_height = 196.0
+box_width = 810.0
+cx = 960.0
+cy = 898.0
+output = "HDMI-A-1"
+rotation = 0.0
+type = "login_box"
 
-        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
-        background_radius = 12.0
-        center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
-        layout = "regular"
-        show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_media = true
-        show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
+[lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+center_password_text = false
+input_opacity = 1.0
+input_radius = 6.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = false
+show_weather = false
 
-    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 196.0
-    box_width = 810.0
-    cx = 960.0
-    cy = 898.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "login_box"
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+box_height = 196.0
+box_width = 810.0
+cx = 960.0
+cy = 898.0
+output = "eDP-1"
+rotation = 0.0
+type = "login_box"
 
-        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
-        background_opacity = 0.88
-        background_radius = 12.0
-        center_password_text = false
-        input_opacity = 1.0
-        input_radius = 6.0
-        layout = "regular"
-        show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_media = true
-        show_session_buttons = true
-        show_unlock_hint = true
-        show_weather = true
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+center_password_text = false
+input_opacity = 1.0
+input_radius = 6.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
 
 [theme]
 builtin = "Ayu"
@@ -93,17 +117,17 @@ builtin = "Ayu"
 [wallpaper]
 directory = "/home/leo/wallpapers"
 
-    [wallpaper.default]
-    path = "/home/leo/wallpapers/HumanBonusWP_DivReach-1920x1080.jpg"
+[wallpaper.default]
+path = "/home/leo/wallpapers/HumanBonusWP_DivReach-1920x1080.jpg"
 
-    [wallpaper.last]
-    path = "/home/leo/wallpapers/HumanBonusWP_DivReach-1920x1080.jpg"
+[wallpaper.last]
+path = "/home/leo/wallpapers/HumanBonusWP_DivReach-1920x1080.jpg"
 
 [widget.battery]
 show_label = false
 
 [widget.cpu]
-display = "text"
+visualization = "none"
 
 [widget.date]
 format = "{:%a %d %b }"
@@ -112,23 +136,49 @@ format = "{:%a %d %b }"
 glyph = "rocket"
 
 [widget.network_rx]
-display = "text"
+visualization = "none"
 
 [widget.network_tx]
-display = "text"
+visualization = "none"
 
 [widget.ram]
-display = "text"
+visualization = "none"
 
 [widget.sysmon]
-display = "text"
-stat = "gpu_usage"
+visualization = "none"
 
+stat = "gpu_usage"
 [widget.temp]
-display = "text"
+visualization = "none"
 
 [widget.tray]
 drawer = true
 
 [widget.volume]
 show_label = false
+
+[[shell.session.actions]]
+action = "lock"
+shortcut = "L"
+countdown_seconds = 1
+
+[[shell.session.actions]]
+action = "logout"
+shortcut = "O"
+countdown_seconds = 1
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+shortcut = "S"
+countdown_seconds = 1
+
+[[shell.session.actions]]
+action = "reboot"
+shortcut = "R"
+countdown_seconds = 1
+
+[[shell.session.actions]]
+action = "shutdown"
+shortcut = "D"
+countdown_seconds = 1
+variant = "destructive"

@@ -1,4 +1,5 @@
-local primary = "rgb(e6b450)"
+local primary_yellow = "rgb(e6b450)"
+local primary_blue = "rgb(b0c8ed)"
 local surface = "rgb(0b0e14)"
 local secondary = "rgb(aad94c)"
 local error = "rgb(d95757)"
@@ -8,7 +9,7 @@ local surface_lowest = "rgb(0e1218)"
 hl.config({
 	general = {
 		col = {
-			active_border = primary,
+			active_border = primary_blue,
 			inactive_border = surface,
 		},
 	},
@@ -21,7 +22,7 @@ hl.config({
 		},
 		groupbar = {
 			col = {
-				active = primary,
+				active = primary_blue,
 				inactive = surface,
 				locked_active = error,
 				locked_inactive = surface,

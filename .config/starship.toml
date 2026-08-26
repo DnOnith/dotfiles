@@ -1,4 +1,4 @@
-format = "$directory $character$username $fill $time\n [󱞪](fg:yellow) "
+format = "$directory $character$username $fill $time\n [󱞪](fg:blue) "
 palette = "rose-pine-moon"
 add_newline = false
 
@@ -12,6 +12,8 @@ foam = '#9ccfd8'
 iris = '#c4a7e7'
 yellow = '#e6b450'
 green = '#aad94c'
+blue = '#b0c8ed'
+pink = '#e1bae1'
 
 [directory]
 format = "(fg:overlay)[$path]($style)(fg:overlay)"
@@ -40,7 +42,7 @@ symbol = ""
 [time]
 disabled = false
 format = "(fg:overlay)[ $time 󰴈 ]($style)(fg:overlay)"
-style = "fg:green"
+style = "fg:pink"
 time_format = "%H:%M"
 use_12hr = false
 
@@ -48,5 +50,5 @@ use_12hr = false
 disabled = false
 format = "(fg:overlay)[󰧱 $user]($style)(fg:overlay)"
 show_always = true
-style_root = "fg:yellow"
-style_user = "fg:yellow"
+style_root = "fg:pink"
+style_user = "fg:pink"
