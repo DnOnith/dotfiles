@@ -139,3 +139,6 @@ hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd(noctalia .. " panel-toggle cont
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(noctalia .. " panel-toggle session"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctalia .. " power-cycle"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle clipboard"))
+
+--pypr
+hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("pypr expose"))

@@ -47,3 +47,11 @@ hl.window_rule({
 	move = "20 monitor_h-120",
 	float = true,
 })
+
+hl.workspace_rule({
+	workspace = "special:exposed",
+	gaps_out = 60,
+	gaps_in = 30,
+	border_size = 5,
+	no_shadow = true,
+})
